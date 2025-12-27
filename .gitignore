@@ -1,0 +1,35 @@
+# Data files
+data/raw_fastq/
+data/*.qza
+data/*.qzv
+data/*.fastq
+data/*.fastq.gz
+
+# Results directories
+results/figures/
+results/statistics/
+results/qc_reports/
+results/extracted/
+results/extracted_figures/
+results/plots_from_data/
+
+# Large files
+*.qza
+*.qzv
+*.fastq
+*.fastq.gz
+*.pdf
+
+# Temporary/backup files
+.snakemake/
+Snakefile.backup
+*~
+*.backup
+
+# Other
+SraRunTable.txt
+task2_part2.R
+workflow.png
+FINAL_REPORT_READY.txt
+YOUR_COMPLETE_RESULTS.txt
+key_findings.txt

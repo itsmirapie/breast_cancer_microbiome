@@ -1,0 +1,14 @@
+name: gut_breast_project
+channels:
+  - conda-forge
+  - bioconda
+  - qiime2
+dependencies:
+  - qiime2=2024.2
+  - qiime2-amplicon=2024.2
+  - snakemake>=7.0
+  - sra-tools
+  - fastqc
+  - multiqc
+  - wget
+  - graphviz

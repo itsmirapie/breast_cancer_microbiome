@@ -1,0 +1,69 @@
+# Configuration for Breast Cancer Microbiome Analysis Pipeline
+
+# List of all samples from PRJNA1356467
+samples:
+  - SRR35933485
+  - SRR35933486
+  - SRR35933487
+  - SRR35933488
+  - SRR35933489
+  - SRR35933490
+  - SRR35933491
+  - SRR35933492
+  - SRR35933493
+  - SRR35933494
+  - SRR35933495
+  - SRR35933496
+  - SRR35933497
+  - SRR35933498
+  - SRR35933499
+  - SRR35933500
+  - SRR35933501
+  - SRR35933502
+  - SRR35933503
+  - SRR35933504
+  - SRR35933505
+  - SRR35933506
+  - SRR35933507
+  - SRR35933508
+  - SRR35933509
+  - SRR35933510
+  - SRR35933511
+  - SRR35933512
+  - SRR35933513
+  - SRR35933514
+  - SRR35933515
+  - SRR35933516
+  - SRR35933517
+  - SRR35933518
+  - SRR35933519
+  - SRR35933520
+  - SRR35933521
+  - SRR35933522
+  - SRR35933523
+  - SRR35933524
+  - SRR35933525
+  - SRR35933526
+  - SRR35933527
+  - SRR35933528
+  - SRR35933529
+  - SRR35933530
+  - SRR35933531
+  - SRR35933532
+  - SRR35933533
+  - SRR35933534
+  - SRR35933535
+  - SRR35933536
+
+# Analysis parameters
+params:
+  trim_left: 13               # Remove primer sequences
+  trunc_len_f: 270            # Forward read truncation length
+  trunc_len_r: 240            # Reverse read truncation length
+  sampling_depth: 23000       # Rarefaction depth
+  min_samples: 2              # Minimum samples for feature filtering
+
+# Resource allocation
+resources:
+  download_threads: 4         # Threads for fasterq-dump
+  qiime_threads: 4            # Threads for QIIME2 processes
