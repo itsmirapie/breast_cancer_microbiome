@@ -1,30 +1,31 @@
 # Data files
-data/raw_fastq/
-data/*.qza
-data/*.qzv
-data/*.fastq
-data/*.fastq.gz
-
-# Results directories
-results/figures/
-results/statistics/
-results/qc_reports/
-results/extracted/
-results/extracted_figures/
-results/plots_from_data/
-
-# Large files
-*.qza
-*.qzv
+data/
 *.fastq
 *.fastq.gz
-*.pdf
+*.qza
+*.qzv
 
-# Temporary/backup files
+# Results - ALL results should be ignored
+results/
+
+# Snakemake
 .snakemake/
-Snakefile.backup
-*~
+
+# Backup files
 *.backup
+*~
+Snakefile.backup
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large files
+*.pdf
+*.png
+*.html
+*.bam
+*.sam
 
 # Other
 SraRunTable.txt
